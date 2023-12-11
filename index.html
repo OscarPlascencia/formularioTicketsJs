@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="sendform" action="send" method="post">
+                    <img src="logoMEpiel.png" id="logo">
+                    <div class="inputbox">
+                        <label>Usuario</label>
+                        <select name="usuario" id="usuario" required>
+                            <option value=""></option>
+                            <option value="oscar plascencia">Oscar Plascencia</option>
+                            <option value="kenia">Kenia Cazares</option>
+                            <option value="mayra">Mayra Pulido</option>
+                            <option value="montse">Mountserrath Navarro</option>
+                            <option value="diana">Diana Cano</option>
+                            <option value="celene">Celene Martinez</option>
+                            <option value="myriam">Myriam Quintero</option>
+                            <option value="monica">Monica Iñiguez</option>
+                            <option value="marcela">Marcela Castillo</option>
+                        </select>
+                    </div>
+                    <div class="inputbox">  
+                        <label>Sucursal</label>
+                        <select name="sucursal" id="sucursal" required>
+                            <option value=""></option>
+                            <option value="occidental">Occidental</option>
+                            <option value="federalismo">Federalismo</option>
+                            <option value="manuelacuna">Manuel Acuña</option>
+                            <option value="rubendario">Rubén Darío</option>
+                        </select>
+                    </div>
+                    <div class="inputbox">
+                        <label>Fecha</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="inputbox">
+                        <label>Prioridad</label>
+                        <select name="prioridad" id="prioridad" required>
+                            <option value=""></option>
+                            <option value="alta" style="background-color: #FF5733">Alta</option>
+                            <option value="media" style="background-color: #E4CE18">Media</option>
+                            <option value="baja" style="background-color: #0CC81D">Baja</option>
+                        </select>
+                    </div>
+                    <div class="inputbox">
+                        <label>Descripción de la incidencia</label>
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
+                    </div>
+                    <button id="sendbutton" form="sendform">Enviar <span class="material-symbols-outlined" id="sendicon">input_circle</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <a id="link" href="" target="_blank">Tickets<span class="material-symbols-outlined" id="linkicon">token</span></a>
+    </aside>
+</body>
+</html>
